@@ -25,5 +25,72 @@
     <title>Portafolio de Kevin Vidal</title>
 </head>
 <body>
+    <header>
+        <h1>Perfil de Kevin Vidal</h1>
+        <!-- aria-label nos sirve para indicar el propósito de un etiqueta, en este caso la etiqueta nav -->
+        <nav aria-label="Enlaces de redes sociales de Kevin Vidal">
+            <ul>
+                <li>
+                    <a href="#">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="#">GitHub</a>
+                </li>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Resumen profesional -->
+         <!-- arial-labelledby apunta a un id de otro elemento cercano que ya contiene una descripción  -->
+        <section area-labelledby="resumen-profesional-titulo">
+            <h2 id="resumen-profesional-titulo">Resumen profesional</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim modi perspiciatis fugiat suscipit 
+                velit porro quibusdam! Corporis ipsam molestiae repudiandae, accusamus cumque amet exercitationem
+                sequi delectus, tenetur dignissimos facilis perferendis!</p>
+        </section>
+
+        <!-- Habilidades y herramientas -->
+        <section area-labelledby="habilidades-herramientas-titulo">
+            <h2 id="habilidades-herramientas-titulo">Habilidades y herramientas</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>Control de versiones de Git y GitHub</li>
+                <li>Accesibilidad y SEO</li>
+            </ul>
+        </section>
+
+        <!-- Proyectos realizados -->
+        <section area-labelledby="proyectos-titulo">
+            <h2 id="proyectos-titulo">Proyectos</h2>
+            <article>
+                <header>
+                    <h3>Mi primer HTML semántico</h3>
+                    <p>
+                        <time datetime="2024-10">Octubre 2024</time>
+                        <span>Tecnologías: HTML, Git, GitHub</span>
+                    </p>
+                    <p>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente amet a praesentium corrupti.
+                        Aperiam, obcaecati quo inventore veritatis ullam, sunt cumque esse iste molestias, aliquam tempore.
+                        Vitae, officia nobis.</p>
+                </header>
+                <figure>
+                    <img src="https://picsum.photos/300/200?grayscale" alt="Captura de pantalla de mi html semántico">
+                </figure>
+                <figcaption>Captura de pantalla de mi html semántico</figcaption>
+                <a href="https://github.com/DoloresPGz/frontend-ai-modulo-1/tree/main/Presentaciones" target="_blank">Ver en GitHub</a>
+            </article>
+        </section>
+        <aside aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <p>Si deseas discutir de un proyecto o colaboración, contáctame a:</p>
+            <address>
+                <p>Email: <a href="mailto:correo@correo.com">correo@correo.com</a></p>
+            </address>
+            <p>55 55 55 55 55</p>
+        </aside>
+    </main>
 </body>
 </html>
