@@ -12,7 +12,7 @@
     <!-- Open Graph: Nos sirve para optimización en redes sociales como Facebook, Instagram y Whatsapp -->
     <meta property="og:title" content="Portafolio de Kevin Vidal"/>
     <meta property="og:description" content="Perfil profesional de Kevin Vidal, desarrollador de frontend."/>
-    <meta property="og:image" content="https://github.com/KevArt96/Practica-HTML-avanzado/blob/master/assets/dog.jpg"/>
+    <meta property="og:image" content="https://github.com/KevArt96/Practica-HTML-avanzado/blob/master/assets/dog.jpg?raw=true"/>
     <meta property="og:url" content="https://kevart96.github.io/Practica-HTML-avanzado/"/>
     <meta property="og:type" content="profile"/>
 
@@ -27,7 +27,7 @@
 <body>
     <header>
         <h1>Perfil de Kevin Vidal</h1>
-        <!-- aria-label nos sirve para indicar el propósito de un etiqueta, en este caso la etiqueta nav -->
+        <!-- aria-label: Nos sirve para indicar el propósito de una etiqueta, en este caso la etiqueta nav -->
         <nav aria-label="Enlaces de redes sociales de Kevin Vidal">
             <ul>
                 <li>
@@ -65,7 +65,8 @@
         <!-- Proyectos realizados -->
         <section area-labelledby="proyectos-titulo">
             <h2 id="proyectos-titulo">Proyectos</h2>
-            <article>
+            <!-- Proyecto 1 -->
+            <article aria-label="Primer proyecto, que es de un HTML semántico">
                 <header>
                     <h3>Mi primer HTML semántico</h3>
                     <p>
@@ -77,19 +78,38 @@
                         Vitae, officia nobis.</p>
                 </header>
                 <figure>
-                    <img src="https://picsum.photos/300/200" alt="Captura de pantalla de mi html semántico">
+                    <img src="https://picsum.photos/300/200" alt="Captura de pantalla de mi página de html semántico">
+                    <figcaption>Pantalla principal de mi html semántico</figcaption>
                 </figure>
-                <figcaption>Captura de pantalla de mi html semántico</figcaption>
-                <a href="https://github.com/DoloresPGz/frontend-ai-modulo-1/tree/main/Presentaciones" target="_blank">Ver en GitHub</a>
+                <a href="https://github.com/DoloresPGz/frontend-ai-modulo-1/blob/main/clase-07-11-2024/ejercicio-1.html" target="_blank">Ver en GitHub</a>
+            </article>
+            <!-- Proyecto 2 -->
+            <article aria-label="Segundo proyecto, que es de una receta de cocina">
+                <header>
+                    <h3>Mi receta de cocina</h3>
+                    <p>
+                        <time datetime="2024-09">Septiembre 2024</time>
+                        <span>Tecnologías: HTML, Git, GitHub</span>
+                    </p>
+                    <p>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente amet a praesentium corrupti.
+                        Aperiam, obcaecati quo inventore veritatis ullam, sunt cumque esse iste molestias, aliquam tempore.
+                        Vitae, officia nobis.</p>
+                </header>
+                <figure>
+                    <img src="https://picsum.photos/350/200" alt="Captura de pantalla de mi receta de cocina">
+                    <figcaption>Pantalla principal de mi receta de cocina</figcaption>
+                </figure>
+                <a href="https://github.com/KevArt96/frontend-ai-modulo-1/tree/master/Ejercicios-basicos-HTML" target="_blank">Ver en GitHub</a>
             </article>
         </section>
+        <!-- aside para agregar información adicional relacionada al contenido principal para dar un poco más de contexto, por ejemplo: un comentario del autor o enlaces adicionales -->
         <aside aria-labelledby="contacto-titulo">
             <h2 id="contacto-titulo">Contacto</h2>
             <p>Si deseas discutir de un proyecto o colaboración, contáctame a:</p>
             <address>
                 <p>Email: <a href="mailto:correo@correo.com">correo@correo.com</a></p>
             </address>
-            <p>55 55 55 55 55</p>
+            <p>Phone: 55 55 55 55 55</p>
         </aside>
     </main>
     <footer>
@@ -106,7 +126,7 @@
                 </li>
             </ul>
         </nav>
-        <p>@copy, 2024 Kevin Vidal. Todos los derechos reservados</p>
+        <p>&copy; 2024 Kevin Vidal. Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
